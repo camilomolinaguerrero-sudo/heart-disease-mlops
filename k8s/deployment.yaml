@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: heart-model
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: heart-model
+  template:
+    metadata:
+      labels:
+        app: heart-model
+    spec:
+      containers:
+      - name: model
+        image: heart-api:latest          # imagen local; con minikube: `minikube image load heart-api:latest`
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
+        readinessProbe:
+          httpGet: {path: /health, port: 8000}
+        resources:
+          requests: {cpu: 100m, memory: 256Mi}
+          limits: {memory: 512Mi}
