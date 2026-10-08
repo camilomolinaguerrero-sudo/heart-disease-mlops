@@ -1,5 +1,7 @@
 # Heart Disease MLOps (local)
 
+Libro: https://camilomolinaguerrero-sudo.github.io/heart-disease-mlops/
+
 Proyecto integrador de aprendizaje automático: predicción de falla cardíaca (`HeartDisease` = 1/0) con el
 dataset *Heart Failure Prediction* (918 pacientes, 11 variables), desde el análisis exploratorio hasta
 API, contenedor, Kubernetes, CI y monitoreo de deriva. Semilla 42; partición 80/20 estratificada

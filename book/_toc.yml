@@ -1,0 +1,10 @@
+format: jb-book
+root: intro
+parts:
+  - caption: Proyecto integrador
+    chapters:
+      - file: 01_fuga_de_datos
+      - file: 02_modelado_cv
+      - file: 03_despliegue
+      - file: 04_monitoreo
+      - file: 05_conclusiones

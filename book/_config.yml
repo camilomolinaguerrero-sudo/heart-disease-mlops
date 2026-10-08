@@ -1,0 +1,31 @@
+title: Proyecto integrador de aprendizaje automático (Heart Disease MLOps)
+author: Camilo Molina Guerrero
+copyright: "2026"
+only_build_toc_files: true
+
+# Los cuadernos se entregan ya ejecutados; el libro no los vuelve a correr.
+execute:
+  execute_notebooks: "off"
+
+sphinx:
+  config:
+    language: es
+    html_extra_path: ["drift_report.html", "drift_report_simulated.html"]
+    nb_merge_streams: true
+
+parse:
+  myst_enable_extensions:
+    - dollarmath
+    - amsmath
+    - colon_fence
+    - linkify
+
+html:
+  use_repository_button: true
+  use_download_button: true
+  home_page_in_navbar: true
+
+repository:
+  url: https://github.com/camilomolinaguerrero-sudo/heart-disease-mlops
+  path_to_book: book
+  branch: main
